@@ -21,7 +21,7 @@ function Parent({ item, level }) {
   const toggleSelected = (id) => {
     //Here we make request based on Parent and Child id
     axios
-      .get(`http://wp.x10.mx/laravel8/public/api/fetchAxiosTreeNode/${id}`)
+      .get(`https://wp.x10.mx/laravel8/public/api/fetchAxiosTreeNode/${id}`)
       .then((res) => {
         setChildByCall(res.data.childs);
       });
