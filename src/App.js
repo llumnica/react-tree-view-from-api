@@ -10,7 +10,7 @@ function App() {
   const [list, setList] = useState([]);
   const [axiosList, setAxiosList] = useState([]);
 
-  useEffect(() => {
+useEffect(() => {
     axios.get("http://wp.x10.mx/laravel8/public/api/showCompleteTree").then((res) => {
       setList(res.data.entries);
     });
