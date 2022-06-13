@@ -11,10 +11,10 @@ function App() {
   const [axiosList, setAxiosList] = useState([]);
 
   useEffect(() => {
-    axios.get("https://wp.x10.mx/laravel8/api/showCompleteTree").then((res) => {
+    axios.get("http://wp.x10.mx/laravel8/public/api/showCompleteTree").then((res) => {
       setList(res.data.entries);
     });
-    axios.get("https://wp.x10.mx/laravel8/api/fetchAxiosTreeNode/").then((res) => {
+    axios.get("http://wp.x10.mx/laravel8/public/api/fetchAxiosTreeNode").then((res) => {
       setAxiosList(res.data.childs);
     });
   }, []);
