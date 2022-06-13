@@ -6,7 +6,7 @@ function Parent({ item, level }) {
 
   const [selected, setSelected] = useState(item.selected ?? false);
   const [childByCall, setChildByCall] = useState([]);
-  const hasChildren = item.childs != 0 ? true : false;
+  const hasChildren = item.childs !== 0 ? true : false;
 
   const renderChilds = () => {
     if (hasChildren) {
