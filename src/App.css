@@ -1,3 +1,7 @@
+.d-flex {
+  display: flex;
+}
+
 .entryToggler {
   color: #ff0000;
   cursor: pointer;
@@ -16,11 +20,9 @@
 }
 
 .main {
-  position: absolute;
-  left: 15%;
-  top: 0;
   border-left: 3px solid #008080;
   height: auto;
+  margin-left: 50px;
   padding-left: 50px;
 }
 
@@ -56,4 +58,19 @@ ul li {
 
 .entryActive img{
 transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .main {
+    margin-left: 45px;
+    padding-left: 10px;
+  }
+
+  .main h1 {
+    font-size: 25px;
+  }
 }

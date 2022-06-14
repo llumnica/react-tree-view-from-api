@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App d-flex">
       <BrowserRouter>
         <Nav />
         <Routes>
