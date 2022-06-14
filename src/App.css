@@ -60,6 +60,27 @@ ul li {
 transform: rotate(90deg);
 }
 
+footer {
+  position:fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  margin: -17px;
+}
+
+footer .text-center {
+  color: #b3b3b3;
+  padding: 20px;
+  /* background-color: #008080; */
+  background: linear-gradient(50deg, rgba(0, 0, 0, 1) 0%, rgba(0, 172, 193, .9));
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ff0000;
+  font-weight: 600;
+}
 @media only screen and (max-width: 600px) {
   .d-flex {
     flex-direction: column;

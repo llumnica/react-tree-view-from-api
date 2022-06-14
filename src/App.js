@@ -28,6 +28,13 @@ function App() {
           <Route path="/second" element={<AxiosTree data={axiosList} />} />
         </Routes>
       </BrowserRouter>
+
+      <footer>
+        <p class="text-center">
+            Copyright © <a href="https://www.linkedin.com/in/argjendllumnica/">Llumnica</a>
+        </p>
+    </footer>
+
     </div>
   );
 }
